@@ -1,7 +1,7 @@
 <template>
 
   <div v-if="dataLoaded" class="container mt-10 px-4">
-    <h1>{{ name }}</h1>
+    <h1 class="text-5xl text-center font-extrabold italic text-at-dark-green mt-5 mb-10">Hello, {{ name }}!</h1>
     <!-- No Data -->
     <div v-if="data.length === 0" class="w-full flex flex-col items-center">
       <h1 class="text-2xl">Looks empty...</h1>
@@ -40,7 +40,7 @@
 
         <img
           v-else
-          src="@/assets/images/crimp.png"
+          src="@/assets/images/iconBoulder.png"
           class="h-24 flex flex-col w-auto"
           alt="boulder icon"
         />

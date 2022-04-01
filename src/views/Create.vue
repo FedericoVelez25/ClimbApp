@@ -92,7 +92,7 @@
               <!-- NEW ITEM END -->
 
               <div class="flex flex-col flex-1 lg:w-1/3">
-                <label for="completed" class="mb-1 text-sm text-at-dark-green "
+                <label for="completed" class="mb-1 text-sm text-center text-at-dark-green "
                   >Completed</label
                 >
                 <input
@@ -136,7 +136,7 @@
         <!-- Boulder Inputs -->
         <div v-if="climbType === 'boulder'" class="flex flex-col gap-y-4">
           <div
-            class="flex flex-col gap-x-6 gap-y-2 relative md:flex-row"
+            class="flex flex-col gap-x-6 gap-y-2 relative"
             v-for="(item, index) in about"
             :key="index"
           >
@@ -174,17 +174,18 @@
                   v-model="item.session"
                 />
               </div>
-
-              <div class="flex flex-col text-center flex-1 lg:w-1/3">
-                <label for="completed" class="mb-1 text-sm text-at-dark-green"
-                  >Completed</label
-                >
-                <input
-                  type="checkbox"
-                  class="p-2 w-full text-gray-500 focus:outline-none"
-                  v-model="item.completed"
-                />
-              </div>
+              
+                <div class="flex flex-col text-center flex-1 lg:w-1/3">
+                  <label for="completed" class="mb-1 text-sm text-at-dark-green"
+                    >Completed</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="p-2 w-full text-gray-500 focus:outline-none"
+                    v-model="item.completed"
+                  />
+                </div>
+              
             </div>
 
             <div class="flex flex-col flex-1">
